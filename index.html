@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#home">Portfolio</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="foto.jpg" alt="Your Photo" />
+        </div>
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Muhammad Nur Wagola</span></h1>
+          <p>Frontend Developer</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn primary">Contact Saya</a>
+            <a href="#projects" class="btn secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Saya seorang Frontend Developer yang bersemangat dalam belajar untuk
+            membuat aplikasi web. Saya suka mengubah masalah yang rumit menjadi
+            solusi yang sederhana, indah, dan intuitif.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="card">
+            <h3>Frontend</h3>
+            <p>Membuat antarmuka yang responsif dan ramah pengguna</p>
+          </div>
+          <div class="card">
+            <h3>Database</h3>
+            <p>Merancang struktur basis data yang efisien</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-content">
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>HTML/CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>React</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>Node.js</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-bar"><span style="width: 75%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            alt="Project 1"
+          />
+          <h3>E-Commerce Website</h3>
+          <p>
+            Toko online berfitur lengkap dengan integrasi keranjang belanja dan
+            pembayaran.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn">View Demo</a>
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
+            alt="Project 2"
+          />
+          <h3>Task Manager</h3>
+          <p>Aplikasi produktivitas untuk mengelola tugas dan proyek harian.</p>
+          <div class="project-links">
+            <a href="#" class="btn">View Demo</a>
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+            alt="Project 3"
+          />
+          <h3>Weather App</h3>
+          <p>Informasi cuaca waktu nyata dengan deteksi lokasi.</p>
+          <div class="project-links">
+            <a href="#" class="btn">View Demo</a>
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>muhammadnurwagola@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>082199879576</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Kota Makassar</p>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Muhammad Nur Wagola. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
